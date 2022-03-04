@@ -1,6 +1,5 @@
 # markdown cheatsheet
 
-Some functionalities cannot be integrated into a table.
 
 | original                                | markdown                                       |
 |-----------------------------------------|------------------------------------------------|

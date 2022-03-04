@@ -59,7 +59,6 @@ directory.
 
 ```shell
 > ls
-
 ```
 
 What you won't see (unless you've configured your terminal accordingly) is,
@@ -138,7 +137,7 @@ Once this is done, `git push` will suffice. Notice the comment when pushing:
 You have now successfully pushed your first commit to your project. 
 You can verify this by visiting the GitHub page of your repository.
 
-![img.png](img.png)
+![img.png](images/img.png)
 
 ---
 ### 3. Create a feature branch
@@ -156,7 +155,7 @@ a copy of your existing `master` (or `main`) branch. But when you develop
 your code, it will start creating differences. For a better understanding
 take a moment and study this branch visualization.
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 This visualization shows commits to the `master` branch, as well as to
 the `my-feature-branch`. To achive this, we will create a new branch and
@@ -206,7 +205,7 @@ Open up a PR with
 
 You can now see the PR in the accoring section on GitHub.
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 You can also add reviewers to your PR, this will speed up the process of 
 code inspection and testing in real life.
@@ -226,7 +225,7 @@ This will ask you a few questions, you can always go with the first option.
 Since our feature is now merged into `master`, we can now observe a closed
 cycle in our network graph.
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 This means, that our feature is added to the basis.
 

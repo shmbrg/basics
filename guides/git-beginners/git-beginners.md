@@ -37,27 +37,27 @@ In order to make use of `git`, we will need a remote repository. We will
 host this on GitHub (you can also think of GitLab, Bitbucket,..). First
 authorize `gh` with your GitHub account. Follow the instructions.
 
-```
+```shell
 > gh auth login
 ```
 
 Now create a private remote repository on GitHub. This will also clone 
 the remote repository locally, this instance is called local repository. 
 
-```
+```shell
 > gh repo create git-beginners --private --clone
 ```
 
 To switch into your freshly created git repository use `cd` (change directory).
 
-```
+```shell
 > cd git-beginners
 ```
 
 Have a look inside with `ls` (long listing). It will show you an empty 
 directory.
 
-```
+```shell
 > ls
 
 ```
@@ -76,13 +76,12 @@ mimic this with a single file (`nano` is an editor, which lets you create
 a file, in our case, since there is no file in our directory called 
 `my_code.py`, it will create such a file on the fly).
 
-```
+```shell
 > nano my_code.py
-
 ```
 Enter some code and save the file with `ctrl + x`.
 
-```
+```python
 def my_function():
     pass
 ```
@@ -91,7 +90,7 @@ We now have created new code, which we want to keep track of in our
 remote repository. But first lets check the status of our local 
 repository with
 
-```
+```shell
 > git status
 ```
 
@@ -100,7 +99,7 @@ push this now, we need to interact with `git`.
 This is a 3 step process. First we need to mark the files, that are 
 going to be pushed to the remote repository.
 
-```
+```shell
 > git add my_code.py
 ```
 
@@ -116,7 +115,7 @@ where you had to adjust your code in different files, but essentially
 they all belonged to this feature. Commiting changes will always ask you
 to add a commit message (`-m` flag). Use something you will recognize in the future.
 
-```
+```shell
 > git commit -m "this is my commit message"
 ```
 
@@ -128,7 +127,7 @@ is no branch on GitHub), we will need to make sure, that our remote
 repository is aware of our local branch. This has to be done only once,
 afterwards it is set. You can do this with the `--set-upstream` flag.
 
-```
+```shell
 > git push --set-upstream origin master
 ```
 
@@ -163,17 +162,17 @@ This visualization shows commits to the `master` branch, as well as to
 the `my-feature-branch`. To achive this, we will create a new branch and
 switch our default branch to the new branch.
 
-```
+```shell
 > git branch my-feature-branch
 > git checkout my-feature-branch
 ```
 
 We will now add a new feature to our existing `my_code.py` file, e.g.
 
-```
+```shell
 > nano my_code.py
-
-
+```
+```python
 def my_function():
 	pass
 
@@ -201,7 +200,7 @@ code.
 
 Open up a PR with
 
-```
+```shell
 > gh pr create --title "Feature XY" --body "Added a new feature to our model"
 ```
 
@@ -219,7 +218,7 @@ Once your feature got accepted, you will now merge `my-feature-branch`
 into `master`. This step might be clearer if its done in the GitHub UI,
 but for the sake of this guide we'll be doing it with `gh` as well.
 
-```
+```shell
 > gh pr merge
 ```
 
@@ -240,7 +239,7 @@ the case, that a colleague added this feature, which is now on `master`.
 In this case, we will need to update our local `master` in order to 
 further develop our code. This can simply by done by
 
-```
+```shell
 > git checkout master
 > git pull
 ```

@@ -12,7 +12,7 @@
 | _italics_                               | ```*italics* or _italics_```                   |
 | **bold**                                | ```**bold** or __bold__```                     |
 | ~~strikethrough~~                       | ```~~strikethrough~~```                        |
-| [url](https://www.sebastianhumberg.xyz) | ```![url](https://www.sebastianhumberg.xyz)``` |
+| [url](https://www.sebastianhumberg.xyz) | ```[url](https://www.sebastianhumberg.xyz)``` |
 | `code`                                  | ``` `code` ```                                 |
 | ![img_1.png](images/img_1.png)          | ```> blockquotes```                            |
 | ![img_2.png](images/img_2.png)          | ``` --- ```                                    |

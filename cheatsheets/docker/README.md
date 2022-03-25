@@ -13,7 +13,7 @@
 | `docker exec -it <container_id> sh` | open up a shell within running container |
 | `docker build (-t <docker_id>/<project_name>:latest) .` | build container from local Dockerfile (with tag) |
 | `docker commit -c 'CMD ["<command>"]' <container_id>` | build docker image from (modified) running container with startup command |
-| `` |  |
+| `docker attach <container_id>` | hook up terminal to stdin of container |
 | `` |  |
 | `` |  |
 | `` |  |

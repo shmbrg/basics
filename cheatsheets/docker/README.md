@@ -14,7 +14,7 @@
 | `docker build (-t <docker_id>/<project_name>:latest) .` | build container from local Dockerfile (with tag) |
 | `docker commit -c 'CMD ["<command>"]' <container_id>` | build docker image from (modified) running container with startup command |
 | `docker attach <container_id>` | hook up terminal to stdin of container |
-| `` |  |
+| `docker image ls` | list local docker images |
 | `` |  |
 | `` |  |
 | `` |  |

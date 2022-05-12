@@ -15,3 +15,4 @@
 | `git merge <branch>`                                                     | merge branch into `main` (do this on `main` branch)                                                 |
 | `git pull <remote> <branch>`                                             | pull changes from remote branch |
 | `git remote add origin https://github.com/shmbrg/basics.git`             | add remote repo to existing local repo |
+| `git remote -v`             | list remote connections to repo |
